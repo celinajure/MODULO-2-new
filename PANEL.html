@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <!-- fontawesome only --> 
+    <script src="https://kit.fontawesome.com/2267873ac2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/GhisArgentinaProgramaYOPROGRAMO/RepositorioLocal/PortfoliiFrontEndGhis/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="ASSETS/CSS/styles.css">
+    <title>PANEL</title>
+</head>
+<!--aquí comienza el cuerpo de la pagina-->
+<body>
+    <!--barra de navegacion LOGO, REDES, LOGIN-->
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="ASSETS/IMAGENES/Logo ARG Programa-20-20.png" alt="" width="20%" height="">
+            </a>
+            <ul class="list-group list-group-horizontal">
+              <li class="list-group-item"><a href="https://z-p15.www.instagram.com/direct/inbox/?hl=es-la" target="_blank"><i class="fa-brands fa-instagram fa-2xl text-white"></a></i></li>
+              <li class="list-group-item"><a href="https://twitter.com/CelinaJure" target="blank"><i class="fa-brands fa-square-twitter fa-2xl text-white"></a></i></li>
+              <li class="list-group-item"><a href="https://www.linkedin.com/in/celina-jure-9492011a7/" target="blank"><i class="fa-brands fa-linkedin fa-2xl text-white"></a></i></li>
+              <!--Button trigger modal BOTON QUE ABRE EL LOGIN-->
+              <li class="list-group-item">
+                <i class="fa-solid fa-user fa-2xl text-white"  >  
+                </i>
+              </li>
+            </ul> 
+          </div>
+    </nav>
+<!-- FIN de barra de navegacion LOGO, REDES, LOGIN-->
+
+    
+<!--estructura de las LISTAS-->
+    <div class="container text-center mt-1">
+      <div class="row">
+        <!--GRILLA-->
+        <div class="col-3"></div>
+        <div class="col-3">
+          <div class="list-group  mt-5 mb-5">
+            <ul class="list-group nombresItems ">
+              <!-- Lista de PORTFOLIO -->
+              <li  class="list-group-item mt-4
+              mb-4">REDES</li>
+               <li type="button" class="list-group-item mt-4
+               mb-4">DATOS PERSONALES</li>
+               <li type="button" class="list-group-item mt-4
+               mb-4">BANNER</li>
+               <li type="button" class="list-group-item mt-4
+               mb-4"> EDUCACIÓN</li>        
+               <li type="button" class="list-group-item mt-4
+               mb-4">EXPERIENCIA</li>
+               <li type="button" class="list-group-item mt-4
+               mb-4">HARD & SKILLS</li>
+               <li type="button" class="list-group-item mt-4
+               mb-4">PROYECTOS</li>
+            </ul>
+           </div> 
+        </div>
+        <!-- Modal PEN-->
+        <div class="col-sm-1 mt-5">
+          <ul class="list-group">
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#redesModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#datosPersonalesModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#bannerModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#educacionModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#experienciaModalpen"> <i class="fa-sharp fa-solid fa-pen"></i></li>        
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#hardyskillsModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+            <li type="button" class="list-group-item mt-4
+               mb-4 itemPenColor" data-bs-toggle="modal" data-bs-target="#proyectosModalpen"><i class="fa-sharp fa-solid fa-pen"></i></li>
+          </ul>
+        </div>
+        <!-- FIN Modal PEN-->
+        <div class="col-sm-1 mt-5">
+          <ul class="list-group">
+        <!-- Modal TRASH -->
+            <li type="button" class="list-group-item mt-4
+              mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#redesModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#datosPersonalesModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#bannerModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#educacionModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#experienciaModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>        
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#hardyskillsModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+            <li type="button" class="list-group-item mt-4
+            mb-4 itemTrashColor" data-bs-toggle="modal" data-bs-target="#proyectosModaltrash"><i class="fa-sharp fa-solid fa-trash"></i></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <!-- FIN Modal TRASH-->
+
+
+<!-- Modal PEN REDES-->
+<div class="modal fade" id="redesModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">REDES</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">instagram</option>
+          <option value="2">twiter</option>
+          <option value="3">linkedin</option>
+          <option value="1">NUEVA RED</option>
+        </select>
+        <div class="mb-3">
+          <label for="URL Red" class="form-label">url Red</label>
+          <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="Icono Red" class="form-label">icono Red</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí un icono de fontawesome">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN del Modal PEN REDES-->
+<!-- Modal TRASH REDES-->
+<div class="modal fade" id="redesModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">REDES</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">instagram</option>
+          <option value="2">twiter</option>
+          <option value="3">linkedin</option>
+          <option value="1">NUEVA RED</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal  TRASH REDES-->
+
+
+<!-- Modal PEN DATOS PERSONALES-->
+<div class="modal fade" id="datosPersonalesModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS PERSONALES</h1>
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">nombre</option>
+          <option value="2">descripcion</option>
+          <option value="3">carrusel imagen 1</option>
+          <option value="4">carrusel imagen 2</option>
+          <option value="5">carrusel imagen 3</option>
+          <option value="6">carrusel imagen 4</option>
+        </select>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">nombre</label>
+          <input type="text" class="form-control" id="puesto" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">descripción</label>
+          <input type="text" class="form-control" id="puesto" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="imagen" class="form-label">imagen nueva</label>
+          <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal FIN de PEN DATOS PERSONALES-->
+<!-- Modal TRASH DATOS PERSONALES-->
+<div class="modal fade" id="datosPersonalesModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS PERSONALES</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">nombre</option>
+          <option value="2">descripcion</option>
+          <option value="3">carrusel imagen 1</option>
+          <option value="4">carrusel imagen 2</option>
+          <option value="5">carrusel imagen 3</option>
+          <option value="6">carrusel imagen 4</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal TRASH de DATOS PERSONALES-->
+
+
+<!-- Modal  PEN de BANNER-->
+<div class="modal fade" id="bannerModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BANNER</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option value="1">FONDO</option>
+        </select>
+        <div class="mb-3">
+          <label for="" class="form-label"></label>
+          <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal  PEN de BANNER-->
+<!-- Modal  TRASH de BANNER-->
+<div class="modal fade" id="bannerModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">BANNER</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- FIN  de Modal  PEN de BANNER-->
+
+
+  <!-- Modal   PEN de EDUCACION-->
+<div class="modal fade" id="educacionModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EDUCACIÓN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+           <option value="1">CV</option>
+          <option value="2">Primaria</option>
+          <option value="3">Secundaria</option>
+          <option value="4">Escuela Prov. de Danzas </option>
+          <option value="5">Teatro Colon</option>
+          <option value="6">Utaki</option>
+          <option value="7">Fau UBA</option>
+          <option value="8">Escuela de Bellas Artes "P. Pueyrredón"</option>
+          <option value="9">École de Beeaux-Arts, Nimes</option>
+          <option value="10">Kunstakademie Düsseldorf</option>
+          <option value="11">Cursos</option>
+          <option value="12">Argentina Programa</option>
+          <option value="13">NUEVA</option>
+        </select> 
+        <div class="mb-3">
+          <label for="imagen" class="form-label">elegir una imagen</label>
+          <input class="form-control" type="file" id="imagen">
+        </div>
+        <div class="mb-3">
+          <label for="nivel" class="form-label">nivel</label>
+          <input type="text" class="form-control" id="puesto" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="descripción" class="form-label">descripción</label>
+          <textarea  class="form-control" id="descripción" placeholder="complete aquí"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="educacion" class="form-label">fecha de inicio</label>
+          <input type="date" class="form-control" id="fecha de inicio" placeholder="fecha de inicio">
+        </div>
+        <div class="mb-3">
+          <label for="educacion" class="form-label">fecha de finalización</label>
+          <input type="date" class="form-control" id="fecha de finalización" placeholder="fecha de finalización">
+        </div>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal PEN de EDUCACION-->
+  <!--  Modal  TRASH de EDUCACION--> 
+  <div class="modal fade" id="educacionModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">EDUCACIÓN</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>   
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">CV</option>
+          <option value="2">Primaria</option>
+          <option value="3">Secundaria</option>
+          <option value="4">Escuela Prov. de Danzas </option>
+          <option value="5">Teatro Colon</option>
+          <option value="6">Utaki</option>
+          <option value="7">Fau UBA</option>
+          <option value="8">Escuela de Bellas Artes "P. Pueyrredón"</option>
+          <option value="9">École de Beeaux-Arts, Nimes</option>
+          <option value="10">Kunstakademie Düsseldorf</option>
+          <option value="11">Cursos</option>
+          <option value="12">Argentina Programa</option>
+          <option value="13">NUEVA</option>
+        </select>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN  de Modal TRASH de EDUCACION-->
+
+
+
+<!-- Modal   PEN de EXPERIENCIA-->
+<div class="modal fade" id="experienciaModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EXPERIENCIA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">trabajo</option>
+          <option value="2">trabajo 2</option>
+          <option value="3">trabajo 3</option>
+          <option value="4">trabajo 4</option>
+          <option value="5">NUEVO TRABAJO</option>
+        </select>
+        <div class="mb-3">
+          <label for="imagen" class="form-label">elegir una imagen</label>
+          <input class="form-control" type="file" id="imagen">
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">puesto</label>
+          <input type="text" class="form-control" id="puesto" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="descripción" class="form-label">descripción</label>
+          <textarea  class="form-control" id="descripción" placeholder="complete aquí"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">fecha de inicio</label>
+          <input type="date" class="form-control" id="fecha de inicio" placeholder="fecha de inicio">
+        </div>
+        <div class="mb-3">
+          <label for="puesto" class="form-label">fecha de finalización</label>
+          <input type="date" class="form-control" id="fecha de finalización" placeholder="fecha de finalización">
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Es trabajo actual?</label>
+        </div>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIN Modal PEN de EXPERIENCIA-->
+<!-- Modal TRASH de EXPERIENCIA-->
+<div class="modal fade" id="experienciaModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EXPERIENCIA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">trabajo</option>
+          <option value="2">trabajo 2</option>
+          <option value="3">trabajo 3</option>
+          <option value="4">NUEVO TRABAJO</option>
+        </select>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- FIN Modal TRASH de EXPERIENCIA-->
+
+
+<!--Modal PEN de HARD&SKILLS-->
+<div class="modal fade" id="hardyskillsModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">ANGULAR</option>
+          <option value="4">DIRECCION DE OBRAS</option>
+          <option value="5">ALEMAN</option>
+          <option value="6">INGLÉS</option>
+          <option value="7">HOLANDES Y FRANCES</option>
+          <option value="8">NUEVA HABILIDAD</option>
+         </select>
+        <div class="mb-3">
+          <label for="porcentaje" class="form-label">elegir un valor</label>
+          <input type="number" min="0" max="100" id="habilidadPorcentaje">
+        </div>
+        <div class="mb-3">
+          <label for="descripción" class="form-label">descripción</label>
+          <textarea  class="form-control" id="descripción" placeholder="opcional"></textarea>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--FIN deModal PEN de HARD&SKILLS-->
+<!--Modal TRASH de HARD&SKILLS-->
+<div class="modal fade" id="hardyskillsModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">ANGULAR</option>
+          <option value="4">DIRECCION DE OBRAS</option>
+          <option value="5">ALEMAN</option>
+          <option value="6">INGLÉS</option>
+          <option value="7">HOLANDES Y FRANCES</option>
+          <option value="8">NUEVA HABILIDAD</option>
+         </select>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--FIN deModal TRASH de HARD&SKILLS-->
+
+<!--Modal PEN de PROYECTOS-->
+<div class="modal fade" id="proyectosModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">PROYECTOS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">#00 YoProgamo</option>
+          <option value="2">#01 BLOQUERA LOZANO</option>
+          <option value="3">#02 SPREADING THE BEAT</option>
+          <option value="4">#NUEVO PROYECTO</option>
+         </select>
+         <div class="mb-3">
+          <label for="descripción" class="form-label">descripción</label>
+          <textarea  class="form-control" id="descripción" placeholder="opcional"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="porcentaje" class="form-label">estado porcentual del proyecto</label>
+          <input type="number" min="0" max="100" id="habilidadPorcentaje">
+        </div>
+        <div class="mb-3">
+          <label for="imagen" class="form-label">imagenes para documentar</label>
+          <input class="form-control" type="file" id="imagen">
+          <input class="form-control" type="file" id="imagen">
+          <input class="form-control" type="file" id="imagen">
+          <input class="form-control" type="file" id="imagen">
+          <input class="form-control" type="file" id="imagen">
+        </div>
+        
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">GUARDAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--FIN deModal PEN de  PROYECTOS-->
+<!--Modal TRASH de  PROYECTOS-->
+<div class="modal fade" id="proyectosModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">#00 YoProgamo</option>
+          <option value="2">#01 BLOQUERA LOZANO</option>
+          <option value="3">#02 SPREADING THE BEAT</option>
+          <option value="4">#NUEVO PROYECTO</option>
+         </select>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--FIN deModal TRASH de  PROYECTOS-->
+
+
+
+    <!--Footer-->
+    <section>   
+      <footer class="bg-black text-white text-center fs-6 mt-1">
+       <div class="pt-3">
+       <p>&copy Copyright celina jure - 2022</p>
+      </div>
+      </footer>    
+     </section>
+  <!--JavaScript Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
+</body>
+</html>
+
+
+
+
+
+
+ <!--
+  data-bs-toggle="modal" data-bs-target="#loginModal"
+
+<a href=""><li elass="List-group-item™><i ¢lass="fa-solid fa-share-nodes"></i> Redes</1i> </a>
+
+  data-bs-toggle="modal" data-bs-target="#modalRedes"-->
