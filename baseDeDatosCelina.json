@@ -26,51 +26,29 @@
     ],
 
     "experiencia":[
-        {
-            "idExperiencia": "",
-            "nombreExperinecia": "",
-            "telefonoExperinecia":"",
-            "emailExperinecia":"",
-            "domicilioExperinecia":"",
-            "inicioFechaExperinecia":"",
-            "finFechaExperinecia":"",
-            "tipoExperinecia":"",
-            "estáHoy":""
-        },
-        {
-            "idExperiencia": "",
-            "nombreExperinecia": "",
-            "telefonoExperinecia":"",
-            "emailExperinecia":"",
-            "domicilioExperinecia":"",
-            "inicioFechaExperinecia":"",
-            "finFechaExperinecia":"",
-            "tipoExperinecia":"",
-            "estáHoy":""
-        },
-        {
-            "idExperiencia": "",
-            "nombreExperinecia": "",
-            "telefonoExperinecia":"",
-            "emailExperinecia":"",
-            "domicilioExperinecia":"",
-            "inicioFechaExperinecia":"",
-            "finFechaExperinecia":"",
-            "tipoExperinecia":"",
-            "estáHoy":""
-        },
-        {
-            "idExperiencia": "",
-            "nombreExperinecia": "",
-            "telefonoExperinecia":"",
-            "emailExperinecia":"",
-            "domicilioExperinecia":"",
-            "inicioFechaExperinecia":"",
-            "finFechaExperinecia":"",
-            "tipoExperinecia":"",
-            "estáHoy":""
-            },
             {
+            "id": "1",
+            "nombre": "Curriculum Vitae",
+            "telefono":"",
+            "email":"celinajure@gmail.com",
+            "domicilio":"CV ",
+            "inicioFecha":"1963",
+            "finFecha":"2022",
+            "tipo":"general",
+            "estáHoy":"true"
+        },
+        {
+            "id": "2",
+            "nombre": "artes",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
             "id": "",
             "nombre": "",
             "telefono":"",
@@ -82,16 +60,83 @@
             "estáHoy":""
         },
         {
-            "idExperiencia": "",
-            "nombreExperinecia": "",
-            "telefonoExperinecia":"",
-            "emailExperinecia":"",
-            "domicilioExperinecia":"",
-            "inicioFechaExperinecia":"",
-            "finFechaExperinecia":"",
-            "tipoExperinecia":"",
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
             "estáHoy":""
         }
+
 
     ],
 
