@@ -1,0 +1,132 @@
+{
+    "persona":[
+        {
+        "id": 1,
+        "imagenPerfil": "ASSETS/IMAGENES/2.pgn",
+        "nombrePerfil": "CELINA JURE",
+        "tituloPerfil": "DESARROLLADORA FULLSTACK JR. 2023",
+        "descricionPerfil":"Estudio realizado en el curso ofrecido por el Ministerio de Desarrollo de la Nación: #SeProgramar (2022) y #YoPorgramo (2023)"
+    },
+    {
+        "id": 2,
+        "imagenPerfil": "ASSETS/IMAGENES/2.pgn",
+        "nombrePerfil": "MARTIN MELE",
+        "tituloPerfil": "AYUDANTE 2023",
+        "descricionPerfil":"aplica a todas las ramas en donde se necesita asistecia y colaboración"
+    }
+    ],
+
+    "carrusel":[
+        {
+        "imagen1": "ASSETS/IMAGENES/1.png",
+        "imagen2": "ASSETS/IMAGENES/2.png",
+        "imagen3": "ASSETS/IMAGENES/3.png",
+        "imagen4": "ASSETS/IMAGENES/4.png"
+    }
+    ],
+
+    "experiencia":[
+        {
+            "idExperiencia": "",
+            "nombreExperinecia": "",
+            "telefonoExperinecia":"",
+            "emailExperinecia":"",
+            "domicilioExperinecia":"",
+            "inicioFechaExperinecia":"",
+            "finFechaExperinecia":"",
+            "tipoExperinecia":"",
+            "estáHoy":""
+        },
+        {
+            "idExperiencia": "",
+            "nombreExperinecia": "",
+            "telefonoExperinecia":"",
+            "emailExperinecia":"",
+            "domicilioExperinecia":"",
+            "inicioFechaExperinecia":"",
+            "finFechaExperinecia":"",
+            "tipoExperinecia":"",
+            "estáHoy":""
+        },
+        {
+            "idExperiencia": "",
+            "nombreExperinecia": "",
+            "telefonoExperinecia":"",
+            "emailExperinecia":"",
+            "domicilioExperinecia":"",
+            "inicioFechaExperinecia":"",
+            "finFechaExperinecia":"",
+            "tipoExperinecia":"",
+            "estáHoy":""
+        },
+        {
+            "idExperiencia": "",
+            "nombreExperinecia": "",
+            "telefonoExperinecia":"",
+            "emailExperinecia":"",
+            "domicilioExperinecia":"",
+            "inicioFechaExperinecia":"",
+            "finFechaExperinecia":"",
+            "tipoExperinecia":"",
+            "estáHoy":""
+            },
+            {
+            "id": "",
+            "nombre": "",
+            "telefono":"",
+            "email":"",
+            "domicilio":"",
+            "inicioFecha":"",
+            "finFecha":"",
+            "tipo":"",
+            "estáHoy":""
+        },
+        {
+            "idExperiencia": "",
+            "nombreExperinecia": "",
+            "telefonoExperinecia":"",
+            "emailExperinecia":"",
+            "domicilioExperinecia":"",
+            "inicioFechaExperinecia":"",
+            "finFechaExperinecia":"",
+            "tipoExperinecia":"",
+            "estáHoy":""
+        }
+
+    ],
+
+    "educación":[
+        {
+        "formacionInicial":"PRIMARIA, Colegio Santa Bárbara, Jujuy",
+        "formacionSecuandaria":"SECUNDARIA, Colegio Nac. de Jujuy y Nr.: 6, CABA",
+        "otraFormacion1":"ESCUELA PROV. de DANZAS, JUJUY, 1968-1978",
+        "otraFormacion2":"TEATRO COLÓN (Beca), 1979 + UTAKI, MOI, Magy Ganiko, desde 2009",
+        "otraFormacion3":"FAU UBA, 1980-1983",
+        "otraFormacion4":"ESC. de BELLAS ARTES *P.PUEYRREDON*,CABA, 1983-1989",
+        "otraFormacion5":"ÉCOLE SUPÉRIEURE DES BEAUX-ARTS, NIMES, FRANCIA, 1986",
+        "otraFormacion6":"KUNSTAKADEMIE DÜSSELDORF, ALEMANIA,1992-1997",
+        "otraFormacion7":"CURSOS EXTERNOS ARTE, HISTORIA, FILOSOFIA, DANZA, ARQUITECTURA e IDIOMAS",
+        "otraFormacion8":"#SeProgramar, 2021 y #YoProgramo, en curso"
+    }
+    ],
+    "hard&skills":[
+        {
+            "id": 1,
+            "habilidad": "HTML",
+            "porcentaje": "75"
+          },
+          {
+              "id": 2,
+              "habilidad": "CSS",
+              "porcentaje": "60"
+            }
+        ]
+
+
+        
+
+
+
+
+
+}
