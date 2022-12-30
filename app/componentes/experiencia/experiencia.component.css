@@ -1,0 +1,4 @@
+section.experiencia .list-group-item:hover{
+    background-color: rgb(110, 145, 133); 
+    font-weight:bold;
+}

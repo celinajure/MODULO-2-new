@@ -1,0 +1,79 @@
+
+<!-- Modal PEN REDES-->
+<div class="modal fade" id="redesModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">REDES</h1>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form [formGroup]="form" name="redesform">
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">instagram</option>
+            <option value="2">twiter</option>
+            <option value="3">linkedin</option>
+            <option value="1">NUEVA RED</option>
+          </select>
+          <div class="mb-3">
+            <label for="URL Red" class="form-label">url Red</label>
+            <input type="url" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí" formControlName="url"
+            [ngClass]="{'is invalid':Url.errors && Url.touched,'is valid':!Url.errors && Url.touched}"> 
+            <div *ngIf="Url.errors && Url.touched">
+              <p *ngIf="Url.hasError('required')" class="text-danger">
+                La Url es requerida!
+              </p>
+            </div>
+          </div>
+          
+
+
+          <div class="mb-3">
+            <label for="Icono Red" class="form-label">icono Red</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí un icono de fontawesome" formControlName="icoFont"
+            [ngClass]="{'is invalid':IcoFont.errors && IcoFont.touched,'is valid':!IcoFont.errors && IcoFont.touched}"> 
+            <div *ngIf="IcoFont.errors && IcoFont.touched">
+              <p *ngIf="IcoFont.hasError('required')" class="text-danger">
+                El Icono de la Red es requerido!
+              </p>
+            </div>
+          </div>
+          </div>
+      
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">GUARDAR</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+  <!-- FIN del Modal PEN REDES-->
+  <!-- Modal TRASH REDES-->
+  <div class="modal fade" id="redesModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">REDES</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">instagram</option>
+            <option value="2">twiter</option>
+            <option value="3">linkedin</option>
+            <option value="1">NUEVA RED</option>
+          </select>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN Modal  TRASH REDES-->
+

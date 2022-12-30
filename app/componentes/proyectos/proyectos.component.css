@@ -1,0 +1,15 @@
+.list-group-item:hover {
+    background-color: rgb(98, 200, 206);
+    font-weight: bold;
+}
+
+ul.proyectos {
+    background-color: transparent;
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+section.proyectos.img {
+    width: -25%;
+}

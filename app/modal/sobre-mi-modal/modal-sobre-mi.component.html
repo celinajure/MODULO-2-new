@@ -1,0 +1,63 @@
+<!-- Modal PEN DATOS PERSONALES-->
+<div class="modal fade" id="datosPersonalesModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS PERSONALES</h1>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form [formGroup]="form" name="redesform">
+        <div class="modal-body">
+          
+          <div class="mb-3">
+            <label for="puesto" class="form-label">nombre</label>
+            <input type="text" class="form-control" id="puesto" placeholder="complete aquí">
+          </div>
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">descripción</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="complete aquí">
+          </div>
+          <div class="mb-3">
+            <label for="imagen1" class="form-label">imagen 1</label>
+            <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+          </div>
+          <div class="mb-3">
+            <label for="imagen2" class="form-label">imagen 2</label>
+            <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="imagen3" class="form-label">imagen 3</label>
+          <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+        </div>
+        <div class="mb-3">
+          <label for="imagen4" class="form-label">imagen 4</label>
+          <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">GUARDAR</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal FIN de PEN DATOS PERSONALES-->
+  <!-- Modal TRASH DATOS PERSONALES-->
+  <div class="modal fade" id="datosPersonalesModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">DATOS PERSONALES</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIN Modal TRASH de DATOS PERSONALES-->

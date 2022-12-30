@@ -1,0 +1,17 @@
+<section class="hard-skills">
+    <div class="container text-white text-center mt-1 ms-0 mw-0">
+      <div class="row text-center-important ">
+        <div class="col-1"></div>
+        <div class="col-10  mt-3 mb-3">        
+                  <h2>HARD & SKILLS</h2> 
+                  <div *ngFor="let hardskill of hardSkills">
+                <div class="progress" style="height: 40px">
+                  <div class="progress-bar" role="progressbar" [style.width.%]="hardskill.porcentaje" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{hardskill.habilidad}} {{hardskill.porcentaje}}%</div>
+                </div> 
+                <br>
+              </div>   
+        </div>
+        </div>
+      </div>
+    </section>
+    

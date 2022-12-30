@@ -1,0 +1,135 @@
+<!-- Modal   PEN de EDUCACION-->
+<div class="modal fade" id="educacionModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EDUCACIÓN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <form [formGroup]="form" name="educacionform">
+        <div class="modal-body">
+          <!--select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">CV</option>
+            <option value="2">Primaria</option>
+            <option value="3">Secundaria</option>
+            <option value="4">Escuela Prov. de Danzas </option>
+            <option value="5">Teatro Colón</option>
+            <option value="6">Utaki</option>
+            <option value="7">Fau UBA</option>
+            <option value="8">Escuela de Bellas Artes "P. Pueyrredón"</option>
+            <option value="9">École de Beeaux-Arts, Nimes</option>
+            <option value="10">Kunstakademie Düsseldorf</option>
+            <option value="11">Cursos</option>
+            <option value="12">Argentina Programa</option>
+            <option value="13">NUEVA</option>
+          </select-->
+          <ul class="p-0">
+            <li *ngFor="let educacion of educaciones" class="d-flex justify-content-between align-items-center m-1 ">
+              <span>{{educacion.id}}. {{educacion.tipo|uppercase}} - {{educacion.nombre|uppercase}}</span>
+              <span class="d-flex justify-content-between gap-2">
+              <!--lapicito rojo que se cambia al tocarlo-->
+                <button type="button" class="btn btn-sm btn-outline-success pl-1 pr-1 m-0" (click)="cargarDetalle(educacion.id)">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+                <!--Tachico de Basura que se hace fondo rojo al tocarlo-->
+                <button type="button" class="btn btn-sm btn-outline-danger pl-1 pr-1 m-0" (click)="borrar(educacion.id)">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+              </span>
+            </li>
+          </ul>
+
+          <div class="input-group mb-3 bg-light" *ngIf="!!form.value.id">
+            <div class="input-group-prepend border-0">
+              <span class="input-group-text border-0" id="basic-addon1">ID:</span>
+            </div>
+            <input class="form-control outline-none border-0 bg-transparent" type="text" readonly formControlName="id">
+          </div>
+
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" formControlName="nombre" [ngClass]="{'is-invalid': form.get('nombre')?.errors && form.get('nombre')?.touched, 'is-valid': form.get('nombre')?.errors && form.get('nombre')?.touched}">
+            <p class="text-danger"
+              *ngIf="form.get('nombre')?.touched && form.get('nombre')?.errors?.['required']">
+              El Nombre de la Educacion es requerido.
+            </p>
+          </div>
+
+          <div class="mb-3">
+            <label for="tipo" class="form-label">nivel educativo</label>
+            <input type="text" class="form-control" id="tipo" formControlName="tipo" [ngClass]="{'is-invalid': form.get('tipo')?.errors && form.get('tipo')?.touched, 'is-valid': form.get('tipo')?.errors && form.get('tipo')?.touched}">
+            <p class="text-danger"
+              *ngIf="form.get('tipo')?.touched && form.get('tipo')?.errors?.['required']">
+                  El Nivel Educativo es requerido!
+                </p>
+              </div>
+           
+
+            
+
+            <div class="mb-3">
+              <label for="lugar" class="form-label">lugar</label>
+              <input type="text" class="form-control" id="lugar" placeholder="" formControlName="lugar">
+            </div>
+            <div class="mb-3">
+              <label for="inicioFecha" class="form-label">fecha de inicio</label>
+              <input type="date" class="form-control" id="fecha de inicio" placeholder="fecha de inicio" formControlName="inicioFecha">
+            </div>
+            <div class="mb-3">
+              <label for="finFecha" class="form-label">fecha de finalización</label>
+              <input type="date" class="form-control" id="fecha de finalización" placeholder="fecha de  finalización" formControlName="finFecha">
+            </div>
+          </div>
+          <!--div class="modal-footer">
+            <button type="button" class="btn btn-secundary">GUARDAR</button>
+          </div-->
+          <div class="modal-footer">
+            <button class="btn btn-secondary" (click)="form.reset()">RESET</button>
+            <button class="btn btn-secondary" (click)="guardar()"[disabled]="form.invalid">GUARDAR DATOS</button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- FIN Modal PEN de EDUCACION-->
+<!--  Modal  TRASH de EDUCACION
+<div class="modal fade" id="educacionModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EDUCACIÓN</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">CV</option>
+          <option value="2">Primaria</option>
+          <option value="3">Secundaria</option>
+          <option value="4">Escuela Prov. de Danzas </option>
+          <option value="5">Teatro Colón</option>
+          <option value="6">Utaki</option>
+          <option value="7">Fau UBA</option>
+          <option value="8">Escuela de Bellas Artes "P. Pueyrredón"</option>
+          <option value="9">École de Beeaux-Arts, Nimes</option>
+          <option value="10">Kunstakademie Düsseldorf</option>
+          <option value="11">Cursos</option>
+          <option value="12">Argentina Programa</option>
+          <option value="13">NUEVA</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secundary">BORRAR</button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" (click)="form.reset()">CANCELAR</button>
+        <button class="btn btn-primary" (click)="guardar()"  [disabled]="form.invalid">BORRAR DATOS</button>
+      </div>
+    </div>
+  </div>
+</div>
+FIN  de Modal TRASH de EDUCACION-->

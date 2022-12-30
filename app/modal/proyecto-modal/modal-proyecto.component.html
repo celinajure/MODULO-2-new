@@ -1,0 +1,106 @@
+<!--Modal PEN de PROYECTOS-->
+<div class="modal fade" id="proyectosModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">PROYECTOS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form [formGroup]="form" name="educacionform">
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">#00 YoProgamo</option>
+            <option value="2">#01 BLOQUERA LOZANO</option>
+            <option value="3">#02 SPREADING THE BEAT</option>
+            <option value="4">#NUEVO PROYECTO</option>
+           </select>
+
+           <div class="mb-3">
+            <label for="nombre" class="form-label">nombre del proyecto</label>
+            <input type="text" class="form-control" id="nombre" placeholder="complete aquí" 
+            formControlName="nombre"
+              [ngClass]="{'is invalid':Nombre.errors && Nombre.touched, 'is valid':!Nombre.errors && Nombre.touched}">
+            <div *ngIf="Nombre.errors && Nombre.touched">
+              <p *ngIf="Nombre.hasError('required')" class="text-danger">
+                El Nombre del Proyecto es requerido!
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="descripcion" class="form-label">descripcion del proyecto</label>
+            <input type="text" class="form-control" id="descripcion" placeholder="complete aquí" 
+            formControlName="descripcion"
+              [ngClass]="{'is invalid':Descripcion.errors && Descripcion.touched, 'is valid':!Descripcion.errors && Descripcion.touched}">
+            <div *ngIf="Descripcion.errors && Descripcion.touched">
+              <p *ngIf="Descripcion.hasError('required')" class="text-danger">
+               La Descripcion del Proyecto es requerida!
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="tipo" class="form-label">tipo de proyecto</label>
+            <input type="text" class="form-control" id="tipo" placeholder="complete aquí" 
+            formControlName="tipo"
+              [ngClass]="{'is invalid':Tipo.errors && Tipo.touched, 'is valid':!Tipo.errors && Tipo.touched}">
+            <div *ngIf="Tipo.errors && Tipo.touched">
+              <p *ngIf="Tipo.hasError('required')" class="text-danger">
+               El Tipo del Proyecto es requerida!
+              </p>
+            </div>
+          </div>
+
+           <div class="mb-3">
+            <label for="descripción" class="form-label">descripción</label>
+            <textarea  class="form-control" id="descripción" placeholder="opcional"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="porcentaje" class="form-label">estado porcentual del proyecto:</label>
+            <input type="number" min="0" max="100" id="habilidadPorcentaje">
+          </div>
+          <div class="mb-3">
+            <label for="imagen" class="form-label">imagenes para documentar</label>
+            <input class="form-control" type="file" id="imagen">
+            <input class="form-control" type="file" id="imagen">
+            <input class="form-control" type="file" id="imagen">
+            <input class="form-control" type="file" id="imagen">
+            <input class="form-control" type="file" id="imagen">
+          </div>
+          
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">GUARDAR</button>
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <!--FIN deModal PEN de  PROYECTOS-->
+  <!--Modal TRASH de  PROYECTOS-->
+  <div class="modal fade" id="proyectosModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">#00 YoProgamo</option>
+            <option value="2">#01 BLOQUERA LOZANO</option>
+            <option value="3">#02 SPREADING THE BEAT</option>
+            <option value="4">#NUEVO PROYECTO</option>
+           </select>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--FIN deModal TRASH de  PROYECTOS-->
+

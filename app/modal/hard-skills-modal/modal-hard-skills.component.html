@@ -1,0 +1,102 @@
+<!--Modal PEN de HARD&SKILLS-->
+<div class="modal fade" id="hardyskillsModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form [formGroup]="form" name="habilidadform">
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">ANGULAR</option>
+            <option value="4">DIRECCION DE OBRAS</option>
+            <option value="5">ALEMAN</option>
+            <option value="6">INGLÉS</option>
+            <option value="7">HOLANDES Y FRANCES</option>
+            <option value="9">FLEXIBILIDAD</option>
+            <option value="10">AUTONOMIA Y TOMA DE DECISIONES</option>
+            <option value="11">COMUNICACION</option>
+            <option value="11">Nueva Habilidad</option>
+           </select>
+           
+           <div class="mb-3">
+            <label for="nombre" class="form-label">nombre de la habilidad</label>
+            <input type="text" class="form-control" id="nombre" placeholder="complete aquí" 
+            formControlName="nombre"
+              [ngClass]="{'is invalid':Nombre.errors && Nombre.touched, 'is valid':!Nombre.errors && Nombre.touched}">
+            <div *ngIf="Nombre.errors && Nombre.touched">
+              <p *ngIf="Nombre.hasError('required')" class="text-danger">
+                El Nombre de la Habilidad es requerida!
+              </p>
+            </div>
+          </div>
+
+          
+          <div class="mb-3">
+            <label for="porcentaje" class="form-label">elegir un valor</label>
+            <input type="number" min="0" max="100" id="habilidadPorcentaje" formControlName="porcentaje"
+            [ngClass]="{'is invalid':Porcentaje.errors && Porcentaje.touched,'is orcentaje':!Porcentaje.errors && Porcentaje.touched}"> 
+            <div *ngIf="Porcentaje.errors && Porcentaje.touched">
+              <p *ngIf="Porcentaje.hasError('required')" class="text-danger">
+                El Porcentaje es requerido!
+              </p>
+              <p *ngIf="Porcentaje.hasError('min')" class="text-danger">
+                El Porcentaje mínimo debe ser mayor a 1!
+              </p>
+              <p *ngIf="Porcentaje.hasError('max')" class="text-danger">
+                El Porcentaje  máximo es 100!
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="descripción" class="form-label">descripción</label>
+            <textarea  class="form-control" id="descripción" placeholder="opcional"></textarea>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">GUARDAR</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <!--FIN deModal PEN de HARD&SKILLS-->
+
+  <!--Modal TRASH de HARD&SKILLS-->
+  <div class="modal fade" id="hardyskillsModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">HARD & SKILLS</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">ANGULAR</option>
+            <option value="4">DIRECCION DE OBRAS</option>
+            <option value="5">ALEMAN</option>
+            <option value="6">INGLÉS</option>
+            <option value="7">HOLANDES Y FRANCES</option>
+            <option value="9">FLEXIBILIDAD</option>
+            <option value="10">AUTONOMIA Y TOMA DE DECISIONES</option>
+            <option value="11">COMUNICACION</option>
+            <option value="11">Nueva Habilidad</option>
+           </select>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--FIN deModal TRASH de HARD&SKILLS-->
+
+

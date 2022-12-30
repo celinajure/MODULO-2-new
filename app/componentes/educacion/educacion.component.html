@@ -1,0 +1,13 @@
+<section  class="educacion" >
+    <div class="container text-white text-center mt-1 ms-0 mw-0">
+      <div class="row text-center-important ">
+        <div class="col-1"></div>
+        <div class="col-10  mt-3 mb-3">
+          <h2>EDUCACIÓN </h2> 
+          <ul class="list-group"*ngFor="let educacion of educaciones">
+            <li class="list-group-item"><a a [href]="educaciones" target="blank"  ><i>{{educacion.tipo|uppercase}},  {{educacion.nombre|uppercase}},  {{educacion.lugar}},  {{educacion.inicioFecha}} - {{educacion.finFecha}}</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </section>

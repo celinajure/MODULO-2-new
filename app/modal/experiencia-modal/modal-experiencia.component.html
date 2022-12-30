@@ -1,0 +1,130 @@
+<!-- Modal   PEN de EXPERIENCIA-->
+<div class="modal fade" id="experienciaModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EXPERIENCIA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    
+      <form [formGroup]="form" name="experienciaform">
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>elija una opción</option>
+            <option value="1">Arte: todo</option>
+            <option value="2">Arte: grandes papeles</option>
+            <option value="3">Arte: cerámica</option>
+            <option value="1">Utilitarios</option>
+            <option value="2">Construcciones: laboca783</option>
+            <option value="3">Construcciones: California</option>
+            <option value="1">Performances</option>
+            <option value="2">Docencia</option>
+            <option value="3">Docencia artes</option>
+            <option value="4">NUEVA EXPERIENCIA</option>
+          </select>
+
+          <div class="mb-3">
+            <label for="nombre" class="form-label">nombre</label>
+            <input class="form-control" type="text" id="nombre" placeholder="complete aquí" formControlName="nombre" [ngClass]="{'is invalid':Nombre.errors && Nombre.touched, 'is valid':!Nombre.errors && 
+            Nombre.touched}">
+            <div *ngIf="Nombre.errors && Nombre.touched">
+              <p *ngIf="Nombre.hasError('required')" class="text-danger">
+                El Nombre de su experiencia es requerido!!!
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="tipo" class="form-label">tipo de experiencia</label>
+            <textarea class="form-control" type="text" id="tipo" placeholder="complete aquí" formControlName="tipo"
+              [ngClass]="{'is invalid':Tipo.errors && Tipo.touched,'is valid':!Tipo.errors && Tipo.touched}">       
+            </textarea>
+            <div *ngIf="Tipo.errors && Tipo.touched">
+              <p *ngIf="Tipo.hasError('required')" class="text-danger">
+                El Tipo de experiencia es requerido!!!
+              </p>>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">teléfono</label>
+            <input type="text" class="form-control" id="telefono" placeholder="complete aquí" formControlName="telefono">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">email</label>
+            <input type="text" class="form-control" id="email" placeholder="complete aquí" formControlName="email">
+          </div>
+
+          <div class="mb-3">
+            <label for="url" class="form-label">url</label>
+            <input type="text" class="form-control" id="url" placeholder="complete aquí" formControlName="url" [ngClass]="{'is invalid':Url.errors && Url.touched, 'is valid':!Url.errors && 
+            Url.touched}">
+            <div *ngIf="Url.errors && Url.touched">
+              <p *ngIf="Url.hasError('required')" class="text-danger">
+                La Url es requerido!!!
+              </p>
+            </div>
+          </div>
+
+         
+
+          <div class="mb-3">
+            <label for="inicioFecha" class="form-label">fecha de inicio</label>
+            <input type="date" class="form-control" id="fecha de inicio" placeholder="fecha de inicio" formControlName="inicioFecha">
+          </div>
+
+          <div class="mb-3">
+            <label for="finfecha" class="form-label">fecha de finalización</label>
+            <input type="date" class="form-control" id="fecha de finalización" placeholder="fecha de finalización" formControlName="finFecha">
+          </div>
+
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" formControlName="estaHoy">
+            <label class="form-check-label" for="flexSwitchCheckDefault">Es trabajo actual?</label>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secundary">GUARDAR</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    </div>
+    </div>
+
+  
+
+<!-- FIN Modal PEN de EXPERIENCIA-->
+<!-- Modal TRASH de EXPERIENCIA-->
+<div class="modal fade" id="experienciaModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">EXPERIENCIA</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>elija una opción</option>
+          <option value="1">Arte: todo</option>
+          <option value="2">Arte: grandes papeles</option>
+          <option value="3">Arte: cerámica</option>
+          <option value="1">Utilitarios</option>
+          <option value="2">Construcciones: laboca783</option>
+          <option value="3">Construcciones: California</option>
+          <option value="1">Performances</option>
+          <option value="2">Docencia</option>
+          <option value="3">Docencia artes</option>
+          <option value="4">NUEVA EXPERIENCIA</option>
+        </select>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FIN Modal TRASH de EXPERIENCIA-->

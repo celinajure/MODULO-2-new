@@ -1,0 +1,45 @@
+ <!-- Modal  PEN de BANNER-->
+ <div class="modal fade" id="bannerModalpen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">BANNER</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <form [formGroup] ="form" name="bannerform">
+        <div class="modal-body">
+          <select class="form-select mb-3" aria-label="Default select example">
+            <option value="1">FONDO</option>
+            <option value="1">NUEVO FONDO</option>
+
+          </select>
+          <div class="mb-3">
+            <label for="" class="form-label"></label>
+            <input type="file" class="form-control" id="exampleFormControlInput1" placeholder="complete aquí">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">GUARDAR</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+  <!-- FIN Modal  PEN de BANNER-->
+  <!-- Modal  TRASH de BANNER-->
+  <div class="modal fade" id="bannerModaltrash" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">BANNER</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secundary">BORRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- FIN  de Modal  TRASH de BANNER-->
+

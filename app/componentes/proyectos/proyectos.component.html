@@ -1,0 +1,78 @@
+<section class="proyectos" *ngFor="let proyecto of proyectos">
+  <div class="container text-white text-center mt-1 ms-0 mw-0">
+    <div class="row text-center-important ">
+      <div class="col-1">
+      </div>
+      <div class="col-10 mt-3 mb-3">
+        <h2>{{proyecto.numero|uppercase}}</h2>
+        <h2>{{proyecto.nombre|uppercase}}</h2>
+        <div class="text-white-important" class="list-group "></div>
+        <div class="list-group-item">
+          <p class="fs-6 fw-lighter"><i>{{proyecto.descripcion}}</i></p>
+        </div>
+
+        
+          <ul class="proyectos  list-group list-group-horizontal mb-4" >
+            <li class="list-group-item"><img [src]="proyecto.imagen1" class=" rounded float" >
+            </li>
+            <li class="list-group-item"><img [src]="proyecto.imagen2" class=" rounded float" >
+            </li>
+            <li class="list-group-item"><img [src]="proyecto.imagen3" class=" rounded float" >
+            </li>
+              <li class="list-group-item"><img [src]="proyecto.imagen4" class=" rounded float" >
+              </li>
+              <li class="list-group-item"><img [src]="proyecto.imagen5" class=" rounded float" >
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!---
+      <section class= "proyectos">
+        <div class="container text-white text-center mt-1 ms-0 mw-0">
+          <div class="row text-center-important ">
+            <div class="col-1">
+            </div>
+            <div class="col-10 mt-3 mb-3">
+              <h2>PROYECTO #01</h2>
+              <div class="text-white-important" class="list-group "></div>
+                <li class="list-group-item">
+                  <p class="fs-6 fw-lighter"><i>Proyecto iniciado en el año 2021, en el barrio de Lozano, en San Salvador de Jujuy, al lado de un barrio nuevo, donde viven más de 800 familias, sobre terrenos donados a sus habitantes, en un orden ecléctico y en constante cambio y desarrollo,  Parte de esos habitantes serán los protagonistas  de este emprendimiento en su produccion. La idea es encaminar un grupo de jóvenes talentosos en oficios a lograr manejar su propia empresa.</i></p>
+                </li>
+              </div>
+                <li class="-group-horizontal-center mb-4">
+                <img src="assets/img/54e90de9-8ab3-4aa0-b7a1-69a7fd977497.jpg" class=" fluid rounded float" alt="...">
+                <img src="assets/img/c1a73d54-6995-4ba1-98c2-188fd2e40149.jpg" class="rounded float" alt="...">
+                <img src="assets/img/b58b0a48-9640-4fd2-95ba-f657b46f26aa.jpg" class="fluid rounded float" alt="...">
+              </div>
+            </div>
+          
+</section>
+
+<section class= "proyectos">
+<div class="container text-white text-center mt-1 ms-0 mw-0">
+  <div class="row text-center-important ">
+    <div class="col-1">
+    </div>
+    <div class="col-10 mt-3 mb-3">
+      <h2>PROYECTO #02</h2>
+      <div class="text-white-important" class="list-group "></div>
+        <li class="list-group-item">
+          <p class="fs-6 fw-lighter"><i><b>SPREADING THE BEAT</b>Se trata de un proyecto que será realizado el la sala superiro de laboica783 paralelamente a otros lugares en el mundo, donde serán expuestos "originales impresos" de diez artistas residentes en diferentes paises. Es un proyecto financiado parcialmente por el Fondo Metropolitano y tendrá lugar durante arteBa en el mes de octubre del 2022.</i></p>
+       </li>
+      </div>
+        <li class="-group-horizontal-center mb-4">
+        <img src="assets/img/cbedbd26-e7f9-4532-9257-6a8ec28fa395.jpg" class=" fluid rounded float" alt="...">
+        <img src="assets/img/e28151b8-b63c-47fb-b0ce-527fa767b27f.jpg" class="rounded float" alt="...">
+        <img src="assets/img/ebac8502-d4f3-438b-a8d8-cbb200a5d82e.jpg" class="fluid rounded float" alt="...">
+      </div>
+    </div>
+ 
+</section>
+-->

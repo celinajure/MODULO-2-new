@@ -1,0 +1,9 @@
+section.educación .list-group-item:hover{
+    background-color: rgb(170, 84, 150); 
+    font-weight:bold;
+    margin-left: -3px;
+    }
+    
+    section.educación .list-group-item{
+          margin-left: 60px; 
+    }

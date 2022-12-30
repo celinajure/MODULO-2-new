@@ -1,0 +1,45 @@
+<section class="section-about">
+    <div class="container text-white text-center mt-1" *ngFor="let persona of personas" [ngSwitch]="persona.id">
+      <div  class="row text-left-important" *ngSwitchCase ="1">
+        <div class="col-1 mt-3 mb-3"></div>
+        <div class="col-3 circular-3 mt-3 mb-3" >
+          <div class="col-5">
+            <img
+              [src]="persona.imagen2"
+              class="rounded-circle img-fluid perfil  mt-3"
+              alt="Foto perfil"
+            />
+          </div>
+         <!-----CARRUSEL   <div id="carouselExampleControls" class="carousel slide banner animated"  data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active"  *ngFor="let imagen of persona.imagenes"><img [src]="imagen" class="rounded-circle w-50" alt="">
+              </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                </button>
+          </div>--> 
+          <!--<div class="img-container">
+            <li class="list-group-item">
+              <img [src]="persona.imagen1" class="rounded float" alt="foto" />
+            </li>
+          </div>-->
+        </div>   
+<!--<img src="ASSETS/IMAGENES/CEL PELOS COLORIDOS IRREGULAR.png" class="w-50" alt="..." title="..." width="" height="" text-centered="">
+        </div>-->
+        
+        <div class="col-4 mt-3 mb-3">
+          <h1>{{persona.nombre|uppercase}} {{persona.apellido |uppercase}}</h1>
+          <h6><i>{{persona.titulo|uppercase}}</i></h6>
+          <h6>{{persona.anio}}</h6>
+          <p class="fs-6 fw-lighter"><i>{{persona.descripcion}}</i></p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+</section>  

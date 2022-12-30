@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg bg-primary sticky-top">
+  <div class="container-fluid">
+      
+      <a class="navbar-brand" href="">
+        <img src="/assets/img/LogoARGPrograma-20-20.png" alt="LogoARGPrograma-20-20" width="20%" height="">
+      </a>
+<!--redes-->
+
+      <ul class="list-group list-group-horizontal" >
+        <div *ngFor="let red of redes">
+          <li class="list-group-item"><a [href]="red.url" target="blank"><i [ngClass]="red.icoFont"></i></a></li>
+         </div><!--Button trigger modal BOTON QUE ABRE EL LOGIN-->
+       <app-boton-login></app-boton-login>
+       <app-logout></app-logout>
+        </ul> 
+ 
+</div>  
+</nav>

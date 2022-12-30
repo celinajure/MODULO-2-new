@@ -1,0 +1,22 @@
+.progress:hover{
+    font-weight: white important
+      
+}
+.progress-bar:hover{
+    
+    --bs-progress-height: 3rem;
+    background-color:rgb(208, 11, 175) ;   
+    opacity: 50%;    
+}
+.progress{
+    text-align: left; 
+    --bs-progress-height: 3rem;
+    opacity: 100%
+}
+.progress-bar{
+    color:white;
+    text-align: left; 
+    --bs-progress-bg: rgb(44, 252, 252);
+    background-color:green;
+    opacity: 90%
+}

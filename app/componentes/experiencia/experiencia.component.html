@@ -1,0 +1,15 @@
+<section class="experiencia">
+    <div class="container text-white text-center mt-1 ms-0 mw-0">
+      <div class="row text-center-important ">
+        <div class="col-1"></div>
+        <div class="col-10  mt-3 mb-3">
+    
+      
+          <h2>EXPERIENCIA</h2>
+          <ul class="list-group" *ngFor="let experiencia of experiencias">
+            <li class="list-group-item"><a [href]="experiencia.url" target="blank" ><i>{{experiencia.nombre|uppercase}}</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </section>

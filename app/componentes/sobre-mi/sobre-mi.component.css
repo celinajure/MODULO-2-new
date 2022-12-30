@@ -1,0 +1,16 @@
+.container-fluid .container-fluid-content{
+    padding: 0px;
+}
+.container, .container-sm{
+    max-width: 100%;
+}
+li.list-group-item{  
+    background-color: transparent;
+;
+    padding : 3px;
+}
+.carousel-item-active{
+align-items: center;
+display: flex;
+
+}
